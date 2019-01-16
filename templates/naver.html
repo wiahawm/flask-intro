@@ -1,0 +1,17 @@
+<style>
+.bigText{
+    height:45px;
+    width:500px;
+}
+
+</style>
+
+{% extends "base.html" %}
+{% block body_block %}
+<br>
+<img class="m-3 d-inline" src="static/naver.jpg" width="25%">
+<form class="d-inline mx-3" action="https://search.naver.com/search.naver">
+    <input class="bigText" type="text" name="query" style="border-color:#03cf5d" placeholder="검색어를 입력해주세요"/>
+    <input type="submit" value="검색" style="background-color:#4CAF50!important" width="50px"/>
+</form>
+{% endblock %}

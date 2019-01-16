@@ -1,0 +1,25 @@
+<style>
+.bigText {
+    height:45px;
+    width:500px;
+    text-align: center;
+}
+
+.leftMargin {
+    margin-left: 150px;
+}
+
+</style>
+
+{% extends "base.html" %}
+{% block body_block %}
+<br>
+<img class="leftMargin" src="static/google.JPG" width="25%">
+
+<form class="mx-3" action="https://www.google.com/search">
+    <input class="bigText" type="text" name="q" placeholder="검색어를 입력해주세요" />
+    <input type="submit" value="검색"/>
+</form>
+{% endblock %}
+
+
